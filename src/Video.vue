@@ -288,8 +288,8 @@ export default {
             }, 3000)
         },
         errorHandler () {
-            console.log(99)
             setTimeout(() => {
+                this.$emit('error');
                 this.isLoading = false;
                 this.isError = true;
             }, 400);

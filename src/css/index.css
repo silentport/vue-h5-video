@@ -83,7 +83,8 @@
   height: inherit;
   display: flex;
   align-items: center;
-  width: calc(100% - 270px);
+  width: calc(100% - 260px);
+  margin-right: 10px;
   position: relative;
 }
 
@@ -94,7 +95,8 @@
   height: 5px;
   width: 100%;
   position: absolute;
-
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .video-wrapper>.control>.progress>.progress-bar>.has-play {
@@ -103,6 +105,8 @@
   width: 0px;
   position: absolute;
   z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .video-wrapper>.control>.progress>.icon {
