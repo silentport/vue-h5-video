@@ -1,0 +1,187 @@
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper>.poster {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.video-wrapper>.error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  color: #ddd;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.loading:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../img/loading.svg');
+  background-size: contain;
+}
+
+.video-wrapper>video {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.video-wrapper>.control {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: inherit;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.video-wrapper>.control>.play-icon,
+.video-wrapper>.control>.pause-icon {
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-wrapper>.control>.progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.video-wrapper>.control>.progress>.progress-bar {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 270px);
+  position: relative;
+}
+
+.video-wrapper>.control>.progress>.progress-bar:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+
+}
+
+.video-wrapper>.control>.progress>.progress-bar>.has-play {
+  height: 5px;
+  background: #bbb;
+  width: 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+.video-wrapper>.control>.progress>.icon {
+  position: relative;
+  width: 50px;
+  height: inherit;
+  cursor: pointer;
+}
+
+.video-wrapper>.control>.progress>.icon>.play-icon::after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid transparent;
+  border-left: 15px solid #aaa;
+}
+
+.video-wrapper>.control>.progress>.icon>.pause-icon::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #aaa;
+}
+
+.video-wrapper>.control>.progress>.icon>.pause-icon::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  transform: translate(-50%, -50%);
+  background: #aaa;
+}
+
+.video-wrapper>.control>.progress>.icon>button,
+.video-wrapper>.control>.progress>.screen-btn>button {
+  outline: none;
+  border: none;
+  height: inherit;
+  width: 100%;
+  background: none;
+  cursor: pointer;
+}
+
+.video-wrapper>.control>.progress>.time {
+  width: 160px;
+}
+
+.video-wrapper>.control>.progress>.screen-btn {
+  width: 50px;
+  height: inherit;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-wrapper>.control>.progress>.screen-btn:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/full.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.staticfile.org/vue/2.5.17/vue.min.js"></script>
+    <script src="./h5-video.js"></script>
+    <title>exp1</title>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+
+    <script>
+        Vue.use(H5Video.H5Video);
+        new Vue({
+
+            el: '#app',
+            methods: {
+                play() {
+
+                }
+            },
+            data () {
+                return {
+                    sources: [
+                       'http://www.youname.com/images/first.ogv',
+                        'http://www.youname.com/images/first.ogg'
+                    ]
+                }
+            },
+            template: `
+                <h5-video 
+                    @play="play"
+                    initHeight="480px"
+                    :sources="sources"
+                    poster="http://img.v.trend.mi.rozbuzz.com/wemedia/cover/89c3cf50ae0911e8988e593b4fd90442/61d6562ed1a7c506d50a8e7c67f949fb.png-290.webp"
+                    src="http://intl.w.xk.miui.com/451a4b2ff292392e9eb85907904645ce"
+                    >
+                
+                </h5-video>
+                `
+        })
+    </script>
+</body>
+
+</html>

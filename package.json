@@ -1,24 +1,63 @@
 {
-  "name": "vue-h5-video",
-  "version": "1.0.1",
+  "_from": "vue-h5-video",
+  "_id": "vue-h5-video@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-l37uDJX/GGrnbvvgXW0NygL5+Fs=",
+  "_location": "/vue-h5-video",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vue-h5-video",
+    "name": "vue-h5-video",
+    "escapedName": "vue-h5-video",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/vue-h5-video/download/vue-h5-video-1.0.4.tgz",
+  "_shasum": "977eee0c95ff186ae76efbe05d6d0dca02f9f85b",
+  "_spec": "vue-h5-video",
+  "_where": "/Users/liyonglong/lylpros/vue-h5-video/t",
+  "author": {
+    "name": "silentport"
+  },
+  "bugs": {
+    "url": "https://github.com/silentport/vue-h5-video/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "A vue component for h5 video",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm run test"
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "chai": "^4.2.0",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/silentport/vue-h5-video.git"
-  },
+  "homepage": "https://github.com/silentport/vue-h5-video#readme",
   "keywords": [
     "vue-video",
     "vue-h5",
     "vue-player"
   ],
-  "author": "silentport",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/silentport/vue-h5-video/issues"
+  "main": "dist/h5-video.js",
+  "name": "vue-h5-video",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silentport/vue-h5-video.git"
   },
-  "homepage": "https://github.com/silentport/vue-h5-video#readme"
+  "scripts": {},
+  "version": "1.0.4"
 }
