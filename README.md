@@ -62,6 +62,8 @@ export default {
 |iconWidth|String|'4%'|size of play and pause icon|
 |playIcon|String|default path|custom playIcon|
 |pauseIcon|String|default path|custom pauseIcon|
+|hasWatermark|Boolean|false|support watermark|
+|watermarkWidth|Boolean|60px|size of watermark|
 |errMsg|String|'加载失败，请检查网络！'|error tip|
  
 
