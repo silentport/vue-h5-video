@@ -63,6 +63,7 @@ export default {
 |playIcon|String|default path|custom playIcon|
 |pauseIcon|String|default path|custom pauseIcon|
 |hasWatermark|Boolean|false|support watermark|
+|watermark|String|undefined|watermark url|
 |watermarkWidth|Boolean|60px|size of watermark|
 |errMsg|String|'加载失败，请检查网络！'|error tip|
  
