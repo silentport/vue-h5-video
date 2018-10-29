@@ -2,10 +2,10 @@
 
 ### feature
 
-> Auto size when playing;
-> Suport custom init width and height;
-> Suport speed and retreat when playing;
-> Suport full screen when playing
+> Auto size when playing;               
+> Suport custom init width and height;                       
+> Suport speed and retreat when playing;          
+> Suport full screen when playing              
 
 ### import methods
 
@@ -44,12 +44,15 @@ export default {
 ```
 
 #### props：
-::: hljs-center
+
 
 |prop|type|default|explain|
 |-|-|-|-|
 |src|String|undefined|video's source link|
 |poster|String|undefined|video's poster|
+|title|String|''|video's title|
+|titleWidth|String|calc(100% - 105px)|size of title|
+|showControlBar|Boolean|true|allow control|
 |sources|Array|[]|video's source link|
 |autoplay|Boolean|false|autoplay when video is loaded|
 |loop|Boolean|false|replay when playing is end
@@ -61,8 +64,6 @@ export default {
 |pauseIcon|String|default path|custom pauseIcon|
 |errMsg|String|'加载失败，请检查网络！'|error tip|
  
-
-:::
 
 #### events
 

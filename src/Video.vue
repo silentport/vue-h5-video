@@ -21,6 +21,14 @@
         >
         </div>
 
+        <img v-if="hasWatermark"
+            :src="watermark" 
+            :style="{'width': watermarkWidth, 'min-width': '80px', 'max-width': '180px'}" 
+            alt="watermark" class="watermark" 
+        >
+
+        <p class="title" v-show="isControl" :style="{'width': titleWidth}">{{title}}</p>
+
         <div class="error" v-if="isError">
             {{errMsg}}
         </div>
@@ -43,14 +51,8 @@
                 alt="pause button" 
                 class="pause-icon"
             >
-            <img v-if="hasWatermark"
-                :src="watermark" 
-                :style="{'width': watermarkWidth}" 
-                alt="watermark" class="watermark" 
-            >
-
             <div class="progress" 
-               v-show="!isLoading"
+               v-show="showControlBar && !isLoading"
             >
                 <div class="icon">
                     <button class="play-icon" v-show="isPause" @click="play"></button>
@@ -85,6 +87,24 @@ export default {
         src: String,
         poster: String,
         watermark: String,
+        title: {
+            type: String,
+            default: () => {
+                return '';
+            }
+        },
+        titleWidth: {
+            type: String,
+            default: () => {
+                return 'calc(100% - 105px)';
+            }
+        },
+        showControlBar: {
+            type: Boolean,
+            default: () => {
+                return true;
+            }
+        },
         sources: {
             type: Array,
             default: () => {

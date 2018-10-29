@@ -67,6 +67,27 @@
   transform: translate(-50%, -50%);
 }
 
+.video-wrapper>.title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-align: left;
+  color: #ddd;
+  min-width: calc(100% - 210px);
+  max-width: calc(100% - 105px);
+  line-height: 15px;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.video-wrapper>.watermark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
 .video-wrapper>.control>.progress {
   display: flex;
   align-items: center;
