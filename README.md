@@ -5,8 +5,12 @@
 > Auto size when playing;               
 > Suport custom init width and height;                       
 > Suport speed and retreat when playing;          
-> Suport full screen when playing              
+> Suport full screen when playing           
 
+### install
+```javascript
+ npm i vue-h5-video --save
+```
 ### import methods
 
 
