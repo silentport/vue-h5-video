@@ -22,7 +22,7 @@
   justify-content: center;
   position: absolute;
   top: 0;
-  color: #ddd;
+  color: #eee;
   font-size: 12px;
   background-color: rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat !important;
@@ -45,7 +45,6 @@
 
 .video-wrapper>video {
   width: 100%;
-  /* height: 100%; */
 }
 
 .video-wrapper>.control {
@@ -56,7 +55,7 @@
   left: 0px;
   width: inherit;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .video-wrapper>.control>.play-icon,
@@ -67,13 +66,17 @@
   transform: translate(-50%, -50%);
 }
 
-.video-wrapper>.title {
+.topbar {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.topbar>.title {
   font-size: 15px;
   text-align: left;
-  color: #ddd;
+  color: #fff;
+  margin-left: 10px;
   min-width: calc(100% - 210px);
   max-width: calc(100% - 105px);
   line-height: 15px;
@@ -81,10 +84,8 @@
   z-index: 1;
 }
 
-.video-wrapper>.watermark {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.topbar>.watermark {
+  vertical-align: top;
   z-index: 1;
 }
 
