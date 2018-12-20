@@ -70,23 +70,31 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 1;
+  display: flex;
+  width: calc(100% - 20px);
 }
 
-.topbar>.title {
+.topbar .title {
   font-size: 15px;
   text-align: left;
-  color: #fff;
+  color: #DDD;
   margin-left: 10px;
-  min-width: calc(100% - 210px);
-  max-width: calc(100% - 105px);
-  line-height: 15px;
+  padding-right: 10px;
   margin-top: 0px;
-  z-index: 1;
+  box-sizing: border-box;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
 }
 
 .topbar>.watermark {
   vertical-align: top;
-  z-index: 1;
 }
 
 .video-wrapper>.control>.progress {
