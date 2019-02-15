@@ -1,4 +1,6 @@
 ## A H5 video component for vue
+[![Build Status](https://travis-ci.org/silentport/vue-h5-video.svg?branch=master)](https://travis-ci.org/silentport/vue-h5-video)
+<a href="https://www.npmjs.com/package/vue-h5-video"><img alt="undefined" src="https://img.shields.io/npm/v/vue-h5-video.svg?style=flat"><a/>
 
 ### feature
 
