@@ -8,7 +8,7 @@
       :preload="preload"
       @ended="resetVideo"
       @click="touch"
-      @canplay.once="preparePlay"
+      @loadedmetadata.once="preparePlay"
       @error="errorHandler"
       @timeupdate="progressHandler"
     >
